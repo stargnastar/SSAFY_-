@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="22dp"
+    android:paddingTop="40dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사진 찍고\n일기 생성하기"
+        android:fontFamily="@font/pretendard_extra_bold"
+        android:textSize="36dp"
+        android:textColor="@color/slinks_black"/>
+
+<!--    이미지 입력창-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사진을 찍어주세요"
+        android:textSize="24dp"
+        android:fontFamily="@font/pretendard_extra_bold"
+        />
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/no_img"/>
+
+
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:text="카메라"
+        android:textColor="@color/slinks_black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        ></Button>
+    <Button
+        android:id="@+id/buttonMakediary"
+        android:text="Chat GPT로 일기 생성"
+        android:textColor="@color/slinks_black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        ></Button>
+
+
+
+
+</LinearLayout>

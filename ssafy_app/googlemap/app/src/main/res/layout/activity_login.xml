@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_marginHorizontal="22dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="추억에서 시작되는"
+            android:textColor="@color/slinks_black"
+            android:textSize="40dp"
+            />
+
+        <TextView
+            android:layout_marginHorizontal="22dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/pretendard_bold"
+            android:text="나의 여정"
+            android:textColor="@color/slinks_black"
+            android:textSize="40dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+
+<!--        소개 이미지-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:gravity="center"
+
+            >
+
+
+
+
+            <LinearLayout
+                android:gravity="start"
+                android:layout_marginHorizontal="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textColor="@color/slinks"
+                    android:fontFamily="@font/pretendard_extra_light"
+                    android:textSize="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LINK"
+                    android:textColor="@color/slinks"
+                    android:fontFamily="@font/pretendard_bold"
+                    android:textSize="60dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textColor="@color/slinks"
+                    android:fontFamily="@font/pretendard_extra_light"
+                    android:textSize="60dp"/>
+
+            </LinearLayout>
+
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+
+
+                android:src="@drawable/thumbnail" />
+
+            <TextView
+
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_extra_bold"
+                android:text="자동으로 생성되는 일기"
+                android:textColor="@color/slinks_black"
+
+                android:textSize="30sp"
+
+                />
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:gravity="center_horizontal|top"
+
+                android:lineSpacingExtra="-3sp"
+                android:text="사진을 찍으면 chat GPT가\n실시간으로 일기를 작성해줘요"
+                android:textAppearance="@style/subcontent"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="40dp"
+
+
+                android:src="@drawable/thumbnail2"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_extra_bold"
+                android:text="쉬운 여행 계획 생성"
+                android:textColor="@color/slinks_black"
+
+                android:textSize="30sp"
+
+                />
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:gravity="center_horizontal|top"
+
+                android:lineSpacingExtra="-3sp"
+                android:text="지도에서 일기를 확인하고 추가해서\n예상 운전시간을 확인하세요"
+                android:textAppearance="@style/subcontent"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/loginface_thumbnail"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="40dp"
+
+
+                android:src="@drawable/thumbnail3"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_extra_bold"
+                android:text="편안한 여정"
+                android:textColor="@color/slinks_black"
+
+                android:textSize="30sp"
+
+                />
+
+            <TextView
+                android:id="@+id/subcontent"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:gravity="center_horizontal|top"
+
+                android:lineSpacingExtra="-3sp"
+                android:text="자율주행차를 타고\n운전에서 해방된 여행을 떠나세요"
+                android:textAppearance="@style/subcontent"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/btn_kakao_login"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="22dp"
+            android:background="@drawable/kakologin"
+            >
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginRight="35dp"
+                    android:layout_gravity=""
+                    android:layout_width="44dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/kakaologo"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="카카오로 시작하기"
+                    android:fontFamily="@font/pretendard_light"
+                    android:textSize="20dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/makeAcoount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center_horizontal|top"
+
+            android:lineSpacingExtra="-3sp"
+            android:text="계정이 없으신가요?"
+            android:textSize="14sp"
+
+            android:textAppearance="@style/subcontent"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
